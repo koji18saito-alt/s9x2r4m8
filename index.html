@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>図々しいボーイズ FC | Official Fan Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BGM -->
+<audio id="bgm" src="bgm.mp3" loop preload="auto"></audio>
+
+<!-- BGM ボタン -->
+<button id="bgm-btn" class="bgm-btn">
+  <span class="bgm-icon">♪</span><span class="bgm-label">BGM</span>
+</button>
+
+<!-- 星空 -->
+<canvas id="stars"></canvas>
+
+<!-- ===== NAV ===== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo"><span>ZZB</span><span class="gold">FC</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#top">TOP</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#live">LIVE</a></li>
+      <li><a href="#gallery">GALLERY</a></li>
+      <li><a href="#member">MEMBER</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="top" class="hero">
+  <div class="hero-left reveal">
+    <p class="eyebrow">OFFICIAL FAN CLUB</p>
+    <h1 class="hero-title">
+      <span class="t1">図々しい</span>
+      <span class="t2">ボーイズ</span>
+    </h1>
+    <p class="hero-tag">― 空気、いただきます。―</p>
+    <div class="chips">
+      <span>お笑いコンビ</span><span>関西</span><span>ZooZoo Sea Boys</span>
+    </div>
+    <a href="#about" class="btn-gold">詳しく見る ▶</a>
+  </div>
+  <div class="hero-right reveal">
+    <div class="poster-box">
+      <img src="images/poster.jpg" alt="図々しいボーイズ" class="poster-img"
+           onerror="this.src='images/slide-2.jpg'">
+      <div class="shine"></div>
+    </div>
+    <div class="silhouette-wrap">
+      <img src="images/silhouette.jpg" alt="シルエット" class="sil-img"
+           onerror="this.style.display='none'">
+    </div>
+  </div>
+</section>
+
+<!-- ===== TICKER ===== -->
+<div class="ticker-bar">
+  <div class="ticker-inner">
+    <span>空気、いただきます。</span><span class="sep">★</span>
+    <span>図々しいボーイズ OFFICIAL FAN CLUB</span><span class="sep">★</span>
+    <span>図々しいボーイズ FC 会員限定サイト</span><span class="sep">★</span>
+    <span>空気、いただきます。</span><span class="sep">★</span>
+    <span>図々しいボーイズ OFFICIAL FAN CLUB</span><span class="sep">★</span>
+    <span>図々しいボーイズ FC 会員限定サイト</span><span class="sep">★</span>
+  </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="en-label">ABOUT</span>
+      <h2>図々しいボーイズとは</h2>
+    </div>
+    <div class="about-wrap">
+      <div class="about-photos reveal">
+        <div class="photo-big">
+          <img src="images/photo_pose1.jpg" alt="図々しいボーイズ"
+               onerror="this.src='images/slide-3.jpg'">
+        </div>
+        <div class="photo-small">
+          <img src="images/photo_pose2.jpg" alt="パフォーマンス"
+               onerror="this.src='images/slide-4.jpg'">
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <p class="big-q">"空気、<br>いただきます。"</p>
+        <p class="body-txt">どんな場所でも、どんな空気でも、まるごと持っていく二人組。<br>笑いと熱量で場を支配する、関西が生んだ図々しい男たち。</p>
+        <p class="body-txt">あなたの毎日に、ちょっとした<b>「空気」</b>を届けます。</p>
+        <div class="stats-box">
+          <div class="stat"><span class="sn stat-n" data-target="90">0</span><span class="sl">立教（年）</span></div>
+          <div class="sdiv"></div>
+          <div class="stat"><span class="sn stat-n" data-target="84">0</span><span class="sl">公演数</span></div>
+          <div class="sdiv"></div>
+          <div class="stat"><span class="sn stat-n" data-target="120">0</span><span class="su">+</span><span class="sl">FC登録者</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FC 特典バナー ===== -->
+<div class="benefit-bar">
+  <div class="benefit-inner">
+    <div class="bi"><span>🎟️</span> 先行ライブ情報</div>
+    <div class="bsep">|</div>
+    <div class="bi"><span>📸</span> 限定ギャラリー</div>
+    <div class="bsep">|</div>
+    <div class="bi"><span>🎬</span> 限定動画コンテンツ</div>
+    <div class="bsep">|</div>
+    <div class="bi"><span>🤝</span> オフ会招待</div>
+    <div class="bsep">|</div>
+    <div class="bi"><span>💌</span> メンバーズレター</div>
+  </div>
+</div>
+
+<!-- ===== LIVE ===== -->
+<section id="live" class="section live-bg">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="en-label">LIVE</span>
+      <h2>ライブ・イベント情報</h2>
+    </div>
+    <div class="live-list">
+
+      <div class="live-card featured reveal">
+        <div class="ldate hot">
+          <span class="lm">APR</span>
+          <span class="ld">12</span>
+          <span class="ly">2026</span>
+        </div>
+        <div class="linfo">
+          <div class="ltags">
+            <span class="ltag red">🔥 出演決定</span>
+            <span class="ltag gold">FC先行</span>
+          </div>
+          <h3>関西青年まつり 2026</h3>
+          <p class="lmeta">📍 関西会場 &nbsp;|&nbsp; 🕐 詳細後日発表</p>
+          <p class="ldesc">図々しいボーイズ、ついに大舞台へ！<br>「空気、いただきます」—— 今年の春を丸ごといただく。</p>
+        </div>
+        <a href="#member" class="btn-ticket">詳細を見る ▶</a>
+      </div>
+
+      <div class="live-card reveal">
+        <div class="ldate soon">
+          <span class="lm">MAY</span>
+          <span class="ld">??</span>
+          <span class="ly">2026</span>
+        </div>
+        <div class="linfo">
+          <div class="ltags"><span class="ltag gray">近日公開</span></div>
+          <h3>図々しいボーイズ 単独ライブ</h3>
+          <p class="lmeta">📍 大阪 詳細近日発表</p>
+          <p class="ldesc">FC登録者への先行お知らせ予定。お見逃しなく！</p>
+        </div>
+        <span class="btn-ticket off">近日公開</span>
+      </div>
+
+      <div class="live-card reveal">
+        <div class="ldate soon">
+          <span class="lm">JUN</span>
+          <span class="ld">??</span>
+          <span class="ly">2026</span>
+        </div>
+        <div class="linfo">
+          <div class="ltags"><span class="ltag gray">近日公開</span></div>
+          <h3>夏の爆笑お笑いフェス</h3>
+          <p class="lmeta">📍 詳細近日発表</p>
+          <p class="ldesc">夏も一緒に笑いましょう！</p>
+        </div>
+        <span class="btn-ticket off">近日公開</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery" class="section">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="en-label">GALLERY</span>
+      <h2>フォトギャラリー</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gi gi-wide reveal" data-cap="空気、いただきます。">
+        <img src="images/gallery_blue.jpg" alt="図々しいボーイズ">
+        <div class="gi-ov"><span>空気、いただきます。</span></div>
+      </div>
+      <div class="gi reveal" data-cap="オフィシャルポスター">
+        <img src="images/poster.jpg" alt="オフィシャルポスター">
+        <div class="gi-ov"><span>オフィシャルポスター</span></div>
+      </div>
+      <div class="gi reveal" data-cap="リハーサル">
+        <img src="images/gallery_stage.jpg" alt="リハーサル">
+        <div class="gi-ov"><span>本番前リハーサル</span></div>
+      </div>
+      <div class="gi reveal" data-cap="オフショット">
+        <img src="images/gallery_sunglasses.jpg" alt="オフショット">
+        <div class="gi-ov"><span>オフショット📸</span></div>
+      </div>
+      <div class="gi reveal" data-cap="シルエット">
+        <img src="images/silhouette.jpg" alt="シルエット">
+        <div class="gi-ov"><span>二人のシルエット</span></div>
+      </div>
+      <div class="gi reveal" data-cap="ロゴバッジ">
+        <img src="images/gallery_badge.jpg" alt="図々しいロゴ">
+        <div class="gi-ov"><span>図々しいボーイズ</span></div>
+      </div>
+      <div class="gi reveal" data-cap="コージー">
+        <img src="images/gallery_face2.jpg" alt="コージー">
+        <div class="gi-ov"><span>コージー</span></div>
+      </div>
+      <div class="gi gi-wide reveal" data-cap="ライブ">
+        <img src="images/gallery_live.jpg" alt="ライブ">
+        <div class="gi-ov"><span>ライブ本番！</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MEMBER ===== -->
+<section id="member" class="section member-bg">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="en-label">MEMBER</span>
+      <h2>メンバー紹介</h2>
+    </div>
+    <div class="member-grid">
+
+      <div class="mcard reveal">
+        <div class="mphoto">
+          <img src="images/photo_a.jpg" alt="メンバーA"
+               onerror="this.src='images/slide-3.jpg'">
+          <div class="mphoto-grad"></div>
+        </div>
+        <div class="minfo">
+          <span class="mrole">ツッコミ</span>
+          <h3 class="mname">コージー</h3>
+          <p class="mbio">鋭いツッコミと抜群のスター性。<br>どんな場の空気も一瞬で掌握する。<br>図々しさの頭脳担当。</p>
+          <div class="mtags">
+            <span>#ツッコミ職人</span><span>#スター性抜群</span><span>#空気の司令官</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mcard reveal">
+        <div class="mphoto">
+          <img src="images/photo_b.jpg" alt="メンバーB"
+               onerror="this.src='images/slide-4.jpg'">
+          <div class="mphoto-grad"></div>
+        </div>
+        <div class="minfo">
+          <span class="mrole">ボケ</span>
+          <h3 class="mname">タカヒーサー</h3>
+          <p class="mbio">天然の図々しさで観客を惹きつける。<br>予測不能のボケで爆笑の渦を作る。<br>笑いのムードメーカー。</p>
+          <div class="mtags">
+            <span>#天然ボケ</span><span>#予測不能</span><span>#ムードメーカー</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== シルエット CTA ===== -->
+<section class="sil-section">
+  <div class="sil-inner">
+    <img src="images/silhouette.jpg" alt="" class="sil-big"
+         onerror="this.style.display='none'">
+    <div class="sil-text">
+      <p class="sil-catch">― 空気、いただきます。―</p>
+      <h2 class="sil-title">一緒に笑いましょう</h2>
+      <p class="sil-sub">FC登録は<b>青年会に入会している方なら無料</b>です</p>
+      <a href="#fc-info" class="btn-gold big">FCについて詳しく見る ▶</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FC INFO ===== -->
+<section id="fc-info" class="section fc-section">
+  <div class="container">
+    <div class="sec-head reveal" style="--gc:#FFD700">
+      <span class="en-label" style="color:#FFD700">FAN CLUB</span>
+      <h2 style="color:#fff">ファンクラブについて</h2>
+      <p class="sec-sub">青年会に登録していれば、あなたも自動的に会員です</p>
+    </div>
+
+    <div class="fc-grid">
+      <div class="fc-card reveal">
+        <div class="fc-icon">🎟️</div>
+        <h3>ライブ先行情報</h3>
+        <p>チケット一般公開より早く、FC登録者へライブ・イベント情報をお届けします。</p>
+      </div>
+      <div class="fc-card reveal">
+        <div class="fc-icon">📸</div>
+        <h3>限定フォトギャラリー</h3>
+        <p>普段は見られない舞台裏・オフショット写真を限定公開。</p>
+      </div>
+      <div class="fc-card reveal">
+        <div class="fc-icon">🎬</div>
+        <h3>限定動画コンテンツ</h3>
+        <p>メンバーからのメッセージ動画や未公開コンテンツを随時配信。</p>
+      </div>
+      <div class="fc-card reveal">
+        <div class="fc-icon">🤝</div>
+        <h3>オフ会・特別イベント</h3>
+        <p>FC登録者限定のオフ会や交流イベントへご招待します。</p>
+      </div>
+      <div class="fc-card reveal">
+        <div class="fc-icon">💌</div>
+        <h3>メンバーズレター</h3>
+        <p>メンバーから直接届くお便り。日常やライブの裏話をお届け。</p>
+      </div>
+      <div class="fc-card reveal">
+        <div class="fc-icon">🎁</div>
+        <h3>限定グッズ情報</h3>
+        <p>FC登録者限定グッズの先行案内・特別デザイングッズをご用意。</p>
+      </div>
+    </div>
+
+    <div class="join-box reveal">
+      <div class="join-badge">入会無料</div>
+      <h3 class="join-title">青年会登録者は自動的に会員です</h3>
+      <p class="join-body">図々しいボーイズ ファンクラブは<br>
+      <b>青年会に入会・登録している方が自動的に会員</b>となります。<br>
+      入会金・月会費は一切かかりません。</p>
+      <div class="join-steps">
+        <div class="jstep">
+          <span class="jnum">01</span>
+          <p>青年会に入会・登録</p>
+        </div>
+        <div class="jarrow">▶</div>
+        <div class="jstep">
+          <span class="jnum">02</span>
+          <p>自動的にFC会員に</p>
+        </div>
+        <div class="jarrow">▶</div>
+        <div class="jstep">
+          <span class="jnum">03</span>
+          <p>特典をお楽しみください！</p>
+        </div>
+      </div>
+      <p class="join-note">🔒 このページはリンクを知っている方のみアクセス可能です</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/gallery_badge.jpg" alt="図々しいボーイズ" class="footer-badge">
+        <div>
+          <div class="footer-logo">図々しいボーイズ FC</div>
+          <p class="footer-sub">― 空気、いただきます。―</p>
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <a href="#top">TOP</a>
+        <a href="#about">ABOUT</a>
+        <a href="#live">LIVE</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#member">MEMBER</a>
+        <a href="#fc-info">FC</a>
+      </nav>
+    </div>
+    <div class="footer-bot">
+      <p>🔒 このページはリンクを知っている方のみアクセス可能です。無断転載・共有はご遠慮ください。</p>
+      <p class="copy">&copy; 2026 図々しいボーイズ ファンクラブ All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div id="lb" class="lb">
+  <button id="lb-x" class="lb-x">✕</button>
+  <img id="lb-img" src="" alt="">
+  <p id="lb-cap"></p>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

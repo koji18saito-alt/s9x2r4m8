@@ -4,10 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <!-- セキュリティヘッダー (CSP / クリックジャッキング防止) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; frame-ancestors 'none';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <title>図々しいボーイズ FC | Official Fan Club</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <!-- アクセス制御 & 乗っ取り防止 (最初に実行) -->
+  <script>
+    (function() {
+      // ── フレーム埋め込み（クリックジャッキング）防止 ──
+      if (window.top !== window.self) {
+        window.top.location.replace(window.self.location.href);
+      }
+
+      // ── リンク外アクセス制限 ──
+      // 正規トークンをここで定義（変更したい場合はこの値を変えてURLを再配布）
+      var VALID_TOKEN = 'zzb2026fc';
+      var hash = (location.hash || '').replace('#', '');
+      var stored = sessionStorage.getItem('zzb_token');
+
+      if (hash === VALID_TOKEN) {
+        // トークンをセッションに保存し、URLからハッシュを消す
+        sessionStorage.setItem('zzb_token', VALID_TOKEN);
+        history.replaceState(null, '', location.pathname);
+      } else if (stored !== VALID_TOKEN) {
+        // トークンなし → アクセス拒否画面
+        document.documentElement.innerHTML = [
+          '<html><head><meta charset="UTF-8">',
+          '<style>body{margin:0;background:#0d0d1a;display:flex;align-items:center;justify-content:center;',
+          'height:100vh;font-family:sans-serif;color:#aaa;}',
+          '.box{text-align:center;padding:40px;}',
+          'h1{color:#FFD700;font-size:2rem;margin-bottom:8px;}',
+          'p{font-size:0.9rem;}</style></head>',
+          '<body><div class="box">',
+          '<h1>🔒 アクセス制限</h1>',
+          '<p>このページはFC会員限定です。<br>正規のリンクからアクセスしてください。</p>',
+          '</div></body></html>'
+        ].join('');
+      }
+    })();
+  </script>
 </head>
 <body>
 
@@ -218,9 +257,9 @@
         <img src="images/gallery_badge.jpg" alt="図々しいロゴ">
         <div class="gi-ov"><span>図々しいボーイズ</span></div>
       </div>
-      <div class="gi reveal" data-cap="コージー">
-        <img src="images/gallery_face2.jpg" alt="コージー">
-        <div class="gi-ov"><span>コージー</span></div>
+      <div class="gi reveal" data-cap="大西のアニキ">
+        <img src="images/gallery_face2.jpg" alt="大西のアニキ">
+        <div class="gi-ov"><span>大西のアニキ</span></div>
       </div>
       <div class="gi gi-wide reveal" data-cap="ライブ">
         <img src="images/gallery_live.jpg" alt="ライブ">

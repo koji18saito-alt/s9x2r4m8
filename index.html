@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="referrer" content="no-referrer">
   <!-- セキュリティヘッダー (CSP / クリックジャッキング防止) -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; frame-ancestors 'none';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self' blob:; frame-ancestors 'none';">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <title>図々しいボーイズ FC | Official Fan Club</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,6 +76,7 @@
       <li><a href="#live">LIVE</a></li>
       <li><a href="#gallery">GALLERY</a></li>
       <li><a href="#member">MEMBER</a></li>
+      <li><a href="#music">MUSIC</a></li>
     </ul>
     <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
   </div>
@@ -335,6 +336,76 @@
   </div>
 </section>
 
+<!-- ===== MUSIC DOWNLOAD ===== -->
+<section id="music" class="section music-section">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="en-label">MUSIC</span>
+      <h2>楽曲ダウンロード</h2>
+      <p class="sec-sub">FC会員限定 — 図々しいボーイズの曲をダウンロードしてご自由にお使いください</p>
+    </div>
+    <div class="music-list">
+
+      <div class="music-card reveal">
+        <div class="music-num">01</div>
+        <div class="music-info">
+          <p class="music-title">待ち曲</p>
+          <p class="music-meta">BGM / SE</p>
+        </div>
+        <audio class="music-preview" controls preload="none">
+          <source src="music/track1_machi.mp3" type="audio/mpeg">
+        </audio>
+        <a href="music/track1_machi.mp3" download="図々しいボーイズ_①待ち曲.mp3" class="btn-music-dl">
+          <span>⬇</span> DL
+        </a>
+      </div>
+
+      <div class="music-card reveal">
+        <div class="music-num">02</div>
+        <div class="music-info">
+          <p class="music-title">オープニング 図々しい曲</p>
+          <p class="music-meta">オープニング</p>
+        </div>
+        <audio class="music-preview" controls preload="none">
+          <source src="music/track2_opening.mp3" type="audio/mpeg">
+        </audio>
+        <a href="music/track2_opening.mp3" download="図々しいボーイズ_②オープニング.mp3" class="btn-music-dl">
+          <span>⬇</span> DL
+        </a>
+      </div>
+
+      <div class="music-card reveal">
+        <div class="music-num">03</div>
+        <div class="music-info">
+          <p class="music-title">正副会長入場曲</p>
+          <p class="music-meta">入場 / SE</p>
+        </div>
+        <audio class="music-preview" controls preload="none">
+          <source src="music/track3_nyujo.mp3" type="audio/mpeg">
+        </audio>
+        <a href="music/track3_nyujo.mp3" download="図々しいボーイズ_③入場曲.mp3" class="btn-music-dl">
+          <span>⬇</span> DL
+        </a>
+      </div>
+
+      <div class="music-card reveal">
+        <div class="music-num">04</div>
+        <div class="music-info">
+          <p class="music-title">エンディング曲</p>
+          <p class="music-meta">エンディング</p>
+        </div>
+        <audio class="music-preview" controls preload="none">
+          <source src="music/track4_ending.mp3" type="audio/mpeg">
+        </audio>
+        <a href="music/track4_ending.mp3" download="図々しいボーイズ_④エンディング曲.mp3" class="btn-music-dl">
+          <span>⬇</span> DL
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ===== シルエット CTA ===== -->
 <section class="sil-section">
   <div class="sil-inner">
@@ -435,6 +506,7 @@
         <a href="#live">LIVE</a>
         <a href="#gallery">GALLERY</a>
         <a href="#member">MEMBER</a>
+        <a href="#music">MUSIC</a>
         <a href="#fc-info">FC</a>
       </nav>
     </div>

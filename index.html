@@ -6,11 +6,9 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="referrer" content="no-referrer">
   <!-- セキュリティヘッダー (CSP / クリックジャッキング防止) -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self' blob:; frame-ancestors 'none';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self' blob:; font-src 'self'; frame-ancestors 'none';">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <title>図々しいボーイズ FC | Official Fan Club</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <!-- アクセス制御 & 乗っ取り防止 (最初に実行) -->
   <script>
@@ -21,25 +19,23 @@
       }
 
       // ── リンク外アクセス制限 ──
-      // 正規トークンをここで定義（変更したい場合はこの値を変えてURLを再配布）
-      var VALID_TOKEN = 'zzb2026fc';
-      var hash = (location.hash || '').replace('#', '');
-      var stored = sessionStorage.getItem('zzb_token');
+      var _a='fc',_b='26',_c='ZzB',_d='20',_e='private',_f='Kj';
+      var T = [_c,'-',_d,_b,'-',_a,'-',_e,'-',_f,'9m'].join('');
+      var h = (location.hash||'').slice(1);
+      var s = sessionStorage.getItem('_s');
 
-      if (hash === VALID_TOKEN) {
-        // トークンをセッションに保存し、URLからハッシュを消す
-        sessionStorage.setItem('zzb_token', VALID_TOKEN);
-        history.replaceState(null, '', location.pathname);
-      } else if (stored !== VALID_TOKEN) {
-        // トークンなし → アクセス拒否画面
-        document.documentElement.innerHTML = [
+      if (h === T) {
+        sessionStorage.setItem('_s', T);
+        history.replaceState(null,'',location.pathname+location.search);
+      } else if (s !== T) {
+        document.documentElement.innerHTML=[
           '<html><head><meta charset="UTF-8">',
-          '<style>body{margin:0;background:#0d0d1a;display:flex;align-items:center;justify-content:center;',
-          'height:100vh;font-family:sans-serif;color:#aaa;}',
-          '.box{text-align:center;padding:40px;}',
-          'h1{color:#FFD700;font-size:2rem;margin-bottom:8px;}',
-          'p{font-size:0.9rem;}</style></head>',
-          '<body><div class="box">',
+          '<style>body{margin:0;background:#0d0d1a;display:flex;align-items:center;',
+          'justify-content:center;height:100vh;font-family:sans-serif;color:#aaa}',
+          '.b{text-align:center;padding:40px}',
+          'h1{color:#FFD700;font-size:2rem;margin-bottom:8px}',
+          'p{font-size:.9rem}</style></head>',
+          '<body><div class="b">',
           '<h1>🔒 アクセス制限</h1>',
           '<p>このページはFC会員限定です。<br>正規のリンクからアクセスしてください。</p>',
           '</div></body></html>'

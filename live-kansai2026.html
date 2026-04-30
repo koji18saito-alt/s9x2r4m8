@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self' blob:; font-src 'self'; frame-ancestors 'none';">
+  <title>関西青年まつり 2026 | 図々しいボーイズ FC</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function() {
+      if (window.top !== window.self) {
+        window.top.location.replace(window.self.location.href);
+      }
+      var T = 'ZzB-2026-fc-private-Kj9m';
+      var s = sessionStorage.getItem('_s');
+      if (s !== T) {
+        document.documentElement.innerHTML=[
+          '<html><head><meta charset="UTF-8">',
+          '<style>body{margin:0;background:#0d0d1a;display:flex;align-items:center;',
+          'justify-content:center;height:100vh;font-family:sans-serif;color:#aaa}',
+          '.b{text-align:center;padding:40px}',
+          'h1{color:#FFD700;font-size:2rem;margin-bottom:8px}',
+          'p{font-size:.9rem}</style></head>',
+          '<body><div class="b">',
+          '<h1>🔒 アクセス制限</h1>',
+          '<p>このページはFC会員限定です。<br>正規のリンクからアクセスしてください。</p>',
+          '</div></body></html>'
+        ].join('');
+      }
+    })();
+  </script>
+  <style>
+    /* ── 詳細ページ専用スタイル ── */
+    .detail-hero {
+      background: linear-gradient(135deg, #0d0d1a 0%, #1a1a2e 100%);
+      padding: 120px 0 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .detail-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(255,215,0,.08) 0%, transparent 70%);
+    }
+    .detail-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #FFD700;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 32px;
+      opacity: .8;
+      transition: opacity .2s;
+    }
+    .detail-back:hover { opacity: 1; }
+    .detail-badge {
+      display: inline-block;
+      background: #e53e3e;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 4px 14px;
+      border-radius: 50px;
+      letter-spacing: .08em;
+      margin-bottom: 16px;
+    }
+    .detail-date {
+      color: #FFD700;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      margin-bottom: 12px;
+    }
+    .detail-title {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      font-weight: 900;
+      color: #fff;
+      margin: 0 0 20px;
+      line-height: 1.2;
+    }
+    .detail-title span { color: #FFD700; }
+    .detail-sub {
+      color: #aaa;
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+
+    /* ── レポートセクション ── */
+    .report-section {
+      background: #0d0d1a;
+      padding: 60px 0 80px;
+    }
+    .report-lead {
+      max-width: 720px;
+      margin: 0 auto 48px;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .report-lead .big-q {
+      font-size: clamp(1.4rem, 3.5vw, 2rem);
+      font-weight: 900;
+      color: #FFD700;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+    .report-lead p {
+      color: #ccc;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    /* ── フォトグリッド ── */
+    .report-photos {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 16px;
+    }
+    .rp-main {
+      grid-column: 1 / -1;
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+      aspect-ratio: 16/9;
+      background: #1a1a2e;
+    }
+    .rp-main img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .rp-sub {
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      aspect-ratio: 4/3;
+      background: #1a1a2e;
+    }
+    .rp-sub img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .rp-caption {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,.75));
+      color: #fff;
+      font-size: 13px;
+      padding: 24px 14px 12px;
+      font-weight: 600;
+    }
+
+    /* ── ハイライトカード ── */
+    .highlight-wrap {
+      max-width: 900px;
+      margin: 48px auto 0;
+      padding: 0 20px;
+    }
+    .highlight-card {
+      background: linear-gradient(135deg, #1a1a2e, #0d0d1a);
+      border: 1px solid rgba(255,215,0,.25);
+      border-radius: 16px;
+      padding: 36px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .highlight-card::before {
+      content: '🔥';
+      position: absolute;
+      top: -10px; right: 20px;
+      font-size: 60px;
+      opacity: .08;
+    }
+    .highlight-card h3 {
+      color: #FFD700;
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .highlight-card p {
+      color: #ccc;
+      line-height: 1.9;
+      font-size: 15px;
+    }
+    .highlight-card p strong {
+      color: #fff;
+    }
+
+    /* ── CTA ── */
+    .report-cta {
+      text-align: center;
+      margin-top: 52px;
+      padding: 0 20px;
+    }
+    .report-cta p {
+      color: #aaa;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 640px) {
+      .report-photos {
+        grid-template-columns: 1fr;
+      }
+      .rp-main { grid-column: 1; }
+      .highlight-card { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span>ZZB</span><span class="gold">FC</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#top">TOP</a></li>
+      <li><a href="index.html#about">ABOUT</a></li>
+      <li><a href="index.html#live">LIVE</a></li>
+      <li><a href="index.html#gallery">GALLERY</a></li>
+      <li><a href="index.html#member">MEMBER</a></li>
+      <li><a href="index.html#music">MUSIC</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="detail-hero">
+  <div class="container" style="position:relative;z-index:1;">
+    <a href="index.html#live" class="detail-back">← LIVEに戻る</a>
+    <p class="detail-badge">🔥 大盛況レポート</p>
+    <p class="detail-date">APR 12, 2026 &nbsp;|&nbsp; 関西会場</p>
+    <h1 class="detail-title">関西青年まつり <span>2026</span></h1>
+    <p class="detail-sub">図々しいボーイズ × 青年会長 ── Openingセレモニー、大盛り上がり！</p>
+  </div>
+</div>
+
+<!-- レポート -->
+<section class="report-section">
+  <div class="report-lead reveal">
+    <p class="big-q">"空気、全部<br>いただきました。"</p>
+    <p>2026年4月12日、関西青年まつり2026が開催。<br>
+    図々しいボーイズと青年会青年会長によるOpeningセレモニーは<br>
+    会場を一瞬で熱気に包み、<strong style="color:#fff">めちゃくちゃ盛り上がった！</strong></p>
+  </div>
+
+  <!-- フォト -->
+  <div class="report-photos">
+    <div class="rp-main reveal">
+      <img src="images/kansai2026_stage.jpg" alt="関西青年まつり2026 Openingセレモニー">
+      <div class="rp-caption">Openingセレモニー ── 図々しいボーイズ、ステージを完全掌握</div>
+    </div>
+    <div class="rp-sub reveal">
+      <img src="images/kansai2026_prep.jpg" alt="本番直前の準備">
+      <div class="rp-caption">本番直前、最終確認中</div>
+    </div>
+    <div class="rp-sub reveal">
+      <img src="images/kansai2026_ceremony.png" alt="青年会長との共演">
+      <div class="rp-caption">青年会青年会長との共演シーン</div>
+    </div>
+  </div>
+
+  <!-- ハイライト -->
+  <div class="highlight-wrap">
+    <div class="highlight-card reveal">
+      <h3>🎤 Opening セレモニー ハイライト</h3>
+      <p>
+        青年会青年会長と図々しいボーイズによるOpeningセレモニーは、会場が一体となる圧巻のスタート。<br>
+        <strong>「空気、いただきます。」</strong>の一声で場の雰囲気を完全に掌握した二人に、会場から大歓声が沸き起こった。<br><br>
+        頼まれてないのに前に出るいつものスタイルで、今年も最高の空気を書き換えた図々しいボーイズ。<br>
+        次の舞台でも、空気ごといただきに行きます。
+      </p>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="report-cta reveal">
+    <p>次のライブ情報はFC会員限定でいち早くお届けします</p>
+    <a href="index.html#live" class="btn-gold">← LIVE一覧に戻る</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/gallery_badge.jpg" alt="図々しいボーイズ" class="footer-badge">
+        <div>
+          <div class="footer-logo">図々しいボーイズ FC</div>
+          <p class="footer-sub">― 空気、いただきます。―</p>
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html#top">TOP</a>
+        <a href="index.html#about">ABOUT</a>
+        <a href="index.html#live">LIVE</a>
+        <a href="index.html#gallery">GALLERY</a>
+        <a href="index.html#member">MEMBER</a>
+        <a href="index.html#music">MUSIC</a>
+        <a href="index.html#fc-info">FC</a>
+      </nav>
+    </div>
+    <div class="footer-bot">
+      <p>🔒 このページはリンクを知っている方のみアクセス可能です。無断転載・共有はご遠慮ください。</p>
+      <p class="copy">&copy; 2026 図々しいボーイズ ファンクラブ All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

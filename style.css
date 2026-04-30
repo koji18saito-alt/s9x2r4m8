@@ -52,16 +52,6 @@ a{text-decoration:none;color:inherit}
 .bgm-btn:hover{transform:scale(1.07)}
 .bgm-btn.muted{background:#444;color:#888;box-shadow:none}
 
-/* ── DL ボタン（固定） ─────────────────── */
-.dl-btn{
-  position:fixed;bottom:72px;right:24px;z-index:999;
-  background:var(--night);color:var(--gold);border:1.5px solid var(--gold);
-  border-radius:50px;padding:9px 16px;font-size:13px;font-weight:700;
-  cursor:pointer;display:flex;align-items:center;gap:6px;
-  box-shadow:0 4px 20px rgba(0,0,0,.5);transition:all .25s;
-  text-decoration:none;
-}
-.dl-btn:hover{background:var(--gold);color:var(--night);transform:scale(1.07)}
 
 /* ── Navbar ──────────────────── */
 #navbar{
@@ -480,9 +470,8 @@ a{text-decoration:none;color:inherit}
   .footer{padding:40px 0 20px}
   .footer-nav{flex-wrap:wrap;gap:12px;justify-content:center}
 
-  /* ── BGM / DL ボタン ── */
+  /* ── BGM ボタン ── */
   .bgm-btn{bottom:16px;right:16px;padding:7px 13px;font-size:12px}
-  .dl-btn{bottom:66px;right:16px;padding:7px 13px;font-size:12px}
 }
 
 /* ── iPhone ノッチ / Dynamic Island 対応 ── */
@@ -494,10 +483,6 @@ a{text-decoration:none;color:inherit}
   .bgm-btn{
     right:max(16px,env(safe-area-inset-right));
     bottom:max(16px,env(safe-area-inset-bottom));
-  }
-  .dl-btn{
-    right:max(16px,env(safe-area-inset-right));
-    bottom:calc(max(16px,env(safe-area-inset-bottom)) + 50px);
   }
 }
 

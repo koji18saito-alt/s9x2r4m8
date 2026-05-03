@@ -72,58 +72,6 @@
   }
 })();
 
-// ── BGM ──────────────────────────────────────────────────────
-(function initBGM() {
-  const audio = document.getElementById('bgm');
-  const btn   = document.getElementById('bgm-btn');
-  if (!audio || !btn) return;
-
-  let playing = false;
-
-  // Try autoplay on first user interaction
-  function startBGM() {
-    if (!playing) {
-      audio.volume = 0.45;
-      audio.play().then(() => {
-        playing = true;
-        updateBtnState();
-      }).catch(() => {});
-    }
-    document.removeEventListener('click', startBGM);
-    document.removeEventListener('touchstart', startBGM);
-    document.removeEventListener('scroll', startBGM);
-  }
-
-  document.addEventListener('click', startBGM, { once: true });
-  document.addEventListener('touchstart', startBGM, { once: true });
-  document.addEventListener('scroll', startBGM, { once: true });
-
-  btn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    if (playing) {
-      audio.pause();
-      playing = false;
-    } else {
-      audio.play().then(() => { playing = true; }).catch(() => {});
-    }
-    updateBtnState();
-  });
-
-  function updateBtnState() {
-    const icon  = btn.querySelector('.bgm-icon');
-    const label = btn.querySelector('.bgm-label');
-    if (playing) {
-      btn.classList.remove('muted');
-      icon.textContent = '♪';
-      label.textContent = 'BGM ON';
-    } else {
-      btn.classList.add('muted');
-      icon.textContent = '♩';
-      label.textContent = 'BGM OFF';
-    }
-  }
-  updateBtnState();
-})();
 
 // ── Scroll reveal ─────────────────────────────────────────────
 (function initReveal() {

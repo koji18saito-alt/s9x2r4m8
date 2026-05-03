@@ -41,16 +41,6 @@ a{text-decoration:none;color:inherit}
 /* ── Canvas ─────────────────── */
 #stars{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.55}
 
-/* ── BGM ─────────────────────── */
-.bgm-btn{
-  position:fixed;bottom:24px;right:24px;z-index:999;
-  background:var(--gold);color:var(--night);border:none;
-  border-radius:50px;padding:9px 16px;font-size:13px;font-weight:700;
-  cursor:pointer;display:flex;align-items:center;gap:6px;
-  box-shadow:0 4px 20px rgba(255,215,0,.5);transition:all .25s;
-}
-.bgm-btn:hover{transform:scale(1.07)}
-.bgm-btn.muted{background:#444;color:#888;box-shadow:none}
 
 
 /* ── Navbar ──────────────────── */
@@ -470,8 +460,7 @@ a{text-decoration:none;color:inherit}
   .footer{padding:40px 0 20px}
   .footer-nav{flex-wrap:wrap;gap:12px;justify-content:center}
 
-  /* ── BGM ボタン ── */
-  .bgm-btn{bottom:16px;right:16px;padding:7px 13px;font-size:12px}
+
 }
 
 /* ── iPhone ノッチ / Dynamic Island 対応 ── */
@@ -479,10 +468,6 @@ a{text-decoration:none;color:inherit}
   #navbar{
     padding-left:max(16px,env(safe-area-inset-left));
     padding-right:max(16px,env(safe-area-inset-right));
-  }
-  .bgm-btn{
-    right:max(16px,env(safe-area-inset-right));
-    bottom:max(16px,env(safe-area-inset-bottom));
   }
 }
 

@@ -225,42 +225,65 @@
       <span class="en-label">GALLERY</span>
       <h2>フォトギャラリー</h2>
     </div>
-    <div class="gallery-grid">
-      <div class="gi gi-wide reveal" data-cap="空気、いただきます。">
+    <!-- プレビューバナー -->
+    <div class="gallery-banner reveal">
+      <div class="gallery-previews">
+        <img src="images/gallery_blue.jpg" alt="">
+        <img src="images/gallery_2shot.jpg" alt="">
+        <img src="images/poster.jpg" alt="">
+      </div>
+      <div class="gallery-banner-body">
+        <p class="gallery-count">📸 全8枚収録</p>
+        <p class="gallery-lead">ライブ・オフショット・2ショットなど<br>図々しいボーイズの舞台裏を公開中</p>
+        <button id="open-gallery" class="btn-gold big">フォトギャラリーを見る ▶</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY OVERLAY ===== -->
+<div id="gallery-overlay" class="gov">
+  <div class="gov-inner">
+    <div class="gov-head">
+      <span class="gov-title">📸 フォトギャラリー</span>
+      <button id="close-gallery" class="gov-close">✕</button>
+    </div>
+    <div class="gov-grid">
+      <div class="gi gi-wide" data-cap="空気、いただきます。">
         <img src="images/gallery_blue.jpg" alt="図々しいボーイズ">
         <div class="gi-ov"><span>空気、いただきます。</span></div>
       </div>
-      <div class="gi reveal" data-cap="オフィシャルポスター">
+      <div class="gi" data-cap="オフィシャルポスター">
         <img src="images/poster.jpg" alt="オフィシャルポスター">
         <div class="gi-ov"><span>オフィシャルポスター</span></div>
       </div>
-      <div class="gi reveal" data-cap="リハーサル">
+      <div class="gi" data-cap="リハーサル">
         <img src="images/gallery_stage.jpg" alt="リハーサル">
         <div class="gi-ov"><span>本番前リハーサル</span></div>
       </div>
-      <div class="gi reveal" data-cap="シルエット">
+      <div class="gi" data-cap="シルエット">
         <img src="images/silhouette.jpg" alt="シルエット">
         <div class="gi-ov"><span>二人のシルエット</span></div>
       </div>
-      <div class="gi reveal" data-cap="ロゴバッジ">
+      <div class="gi" data-cap="ロゴバッジ">
         <img src="images/gallery_badge.jpg" alt="図々しいロゴ">
         <div class="gi-ov"><span>図々しいボーイズ</span></div>
       </div>
-      <div class="gi reveal" data-cap="大西のアニキ">
+      <div class="gi" data-cap="大西のアニキ">
         <img src="images/gallery_face2.jpg" alt="大西のアニキ">
         <div class="gi-ov"><span>大西のアニキ</span></div>
       </div>
-      <div class="gi gi-wide reveal" data-cap="ライブ">
+      <div class="gi gi-wide" data-cap="ライブ">
         <img src="images/gallery_live.jpg" alt="ライブ">
         <div class="gi-ov"><span>ライブ本番！</span></div>
       </div>
-      <div class="gi gi-wide reveal" data-cap="入場前の図々しいボーイズ 2ショット">
+      <div class="gi gi-wide" data-cap="入場前の図々しいボーイズ 2ショット">
         <img src="images/gallery_2shot.jpg" alt="入場前の図々しいボーイズ 2ショット">
         <div class="gi-ov"><span>入場前の図々しいボーイズ 2ショット</span></div>
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <!-- ===== MEMBER ===== -->
 <section id="member" class="section member-bg">
@@ -303,6 +326,54 @@
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAN VOICE ===== -->
+<section id="fanvoice" class="section fanvoice-section">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="en-label">FAN VOICE</span>
+      <h2>ファンからの声</h2>
+      <p class="sec-sub">みなさんから届いた笑えるメッセージを一部ご紹介🎤</p>
+    </div>
+    <div class="fv-grid">
+
+      <div class="fv-card reveal">
+        <div class="fv-icon">😂</div>
+        <p class="fv-msg">「タカヒーサーさんが舞台に出てきた瞬間に笑いました。<strong>何もしてないのに。</strong><br>出オチってこういうことか、と初めて理解しました。」</p>
+        <div class="fv-foot">
+          <span class="fv-name">みかん🍊さん</span>
+          <span class="fv-tag">#出てきただけで笑える</span>
+        </div>
+      </div>
+
+      <div class="fv-card reveal">
+        <div class="fv-icon">🤣</div>
+        <p class="fv-msg">「コージーさんのツッコミが早すぎて、<strong>タカヒーサーさんのボケが終わる前に始まってました。</strong><br>相方のことが心配なのか、信頼してないのかどっちですか？」</p>
+        <div class="fv-foot">
+          <span class="fv-name">ゆかちゃんさん</span>
+          <span class="fv-tag">#ツッコミが待てない</span>
+        </div>
+      </div>
+
+      <div class="fv-card reveal">
+        <div class="fv-icon">😭</div>
+        <p class="fv-msg">「"図々しい"って名前なのに、握手会ではめちゃくちゃ礼儀正しかった。<br><strong>一番図々しかったのは名前だけ</strong>やないか。詐欺や。（大好きです）」</p>
+        <div class="fv-foot">
+          <span class="fv-name">もときさん</span>
+          <span class="fv-tag">#名前詐欺</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- メッセージ送信ボタン -->
+    <div class="fv-cta reveal">
+      <p>あなたのメッセージも送ってみませんか？</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_zuzushii_message/viewform" target="_blank" rel="noopener" class="btn-gold">✉️ メッセージを送る</a>
+      <p class="fv-note">※いただいたメッセージはサイトに掲載させていただく場合があります</p>
     </div>
   </div>
 </section>

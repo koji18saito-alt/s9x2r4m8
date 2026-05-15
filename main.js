@@ -111,6 +111,27 @@
   nums.forEach(el => observer.observe(el));
 })();
 
+// ── Gallery Overlay ───────────────────────────────────────────
+(function initGalleryOverlay() {
+  const gov      = document.getElementById('gallery-overlay');
+  const btnOpen  = document.getElementById('open-gallery');
+  const btnClose = document.getElementById('close-gallery');
+  if (!gov || !btnOpen) return;
+
+  btnOpen.addEventListener('click', () => {
+    gov.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+
+  function closeGov() {
+    gov.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  btnClose.addEventListener('click', closeGov);
+  gov.addEventListener('click', (e) => { if (e.target === gov) closeGov(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeGov(); });
+})();
+
 // ── Gallery lightbox ──────────────────────────────────────────
 (function initLightbox() {
   const lb      = document.getElementById('lb');

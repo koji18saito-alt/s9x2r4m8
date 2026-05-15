@@ -120,17 +120,24 @@
 
   if (!lb) return;
 
+  function openLb(item) {
+    const img     = item.querySelector('img');
+    const caption = item.dataset.cap || item.dataset.caption || '';
+    if (img && img.src) {
+      lbImg.src = img.src;
+      lbCap.textContent = caption;
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
   document.querySelectorAll('.gi').forEach(item => {
-    item.addEventListener('click', () => {
-      const img     = item.querySelector('img');
-      const caption = item.dataset.cap || item.dataset.caption || '';
-      if (img && img.src) {
-        lbImg.src = img.src;
-        lbCap.textContent = caption;
-        lb.classList.add('open');
-        document.body.style.overflow = 'hidden';
-      }
-    });
+    item.addEventListener('click', () => openLb(item));
+  });
+
+  // メンバープロフィール写真もライトボックスで開く
+  document.querySelectorAll('.mphoto').forEach(item => {
+    item.addEventListener('click', () => openLb(item));
   });
 
   function closeLb() {

@@ -160,6 +160,24 @@ a{text-decoration:none;color:inherit}
 .sl{display:block;font-size:11px;color:var(--gray);margin-top:4px;letter-spacing:.07em}
 .sdiv{width:1px;height:48px;background:rgba(255,255,255,.12)}
 
+/* ── History Timeline ─────────── */
+.history-timeline{display:flex;flex-direction:column;gap:20px;margin-bottom:24px}
+.ht-item{
+  display:flex;flex-direction:column;gap:6px;
+  padding:16px 20px;
+  background:rgba(255,255,255,.04);
+  border-left:3px solid var(--gold);
+  border-radius:0 var(--R) var(--R) 0;
+  transition:background .3s;
+}
+.ht-item:hover{background:rgba(255,215,0,.06)}
+.ht-year{
+  font-family:'Bebas Neue',sans-serif;font-size:15px;
+  letter-spacing:2px;color:var(--gold);
+}
+.ht-desc{font-size:14px;color:#bbb;line-height:1.85}
+.ht-desc b{color:#fff}
+
 /* ── Benefit Bar ──────────────── */
 .benefit-bar{
   background:linear-gradient(135deg,var(--deep) 0%,#0f1560 100%);
@@ -357,6 +375,28 @@ a{text-decoration:none;color:inherit}
 
 /* ── Music Section ───────────────── */
 .music-section{background:rgba(255,255,255,.02)}
+
+/* Music Story (event intro + disclaimer) */
+.music-story{
+  background:linear-gradient(135deg,rgba(255,215,0,.07),rgba(255,110,191,.04));
+  border:1px solid rgba(255,215,0,.3);
+  border-radius:var(--R);
+  padding:28px 32px;
+  margin-bottom:32px;
+}
+.music-story-text{
+  font-size:15px;color:#ccc;line-height:2;margin-bottom:18px;
+}
+.music-story-text b{color:#fff}
+.music-disclaimer{
+  font-size:13px;color:var(--gray);
+  background:rgba(255,255,255,.04);
+  border-left:3px solid rgba(255,215,0,.5);
+  padding:10px 16px;border-radius:0 8px 8px 0;
+  line-height:1.8;
+}
+.music-disclaimer b{color:#ffe88a}
+
 .music-list{display:flex;flex-direction:column;gap:16px}
 .music-card{
   display:grid;

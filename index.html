@@ -406,7 +406,7 @@
         ここに、青年会非公式でありながら、<b>図々しくも図々しいボーイズが作詞・作曲した曲たちを披露しよう！</b>
       </p>
       <p class="music-disclaimer">⚠️ <b>楽曲ご使用の際は一言ご連絡を。</b>青年会非公式の為、各依処でご使用の場合は図々しいボーイズへの承諾を得てご使用ください。</p>
-      <p class="music-ban">🚫 <b>無断転載・共有・販売等は固く禁止いたします。</b>図々しいボーイズの楽曲を図々しく使うのは、さすがに困ります！笑</p>
+      <p class="music-ban">🚫 <b>無断転載・共有・販売等は固く禁止いたします。</b></p>
       <div class="music-story-hint" id="music-hint">🎵 クリックして4曲を表示 ▼</div>
     </div>
     <script>
@@ -605,5 +605,25 @@
 </div>
 
 <script src="main.js"></script>
+<script>
+/* 音声排他制御：1曲再生中に別の曲を再生したら前の曲を停止 */
+(function() {
+  function initAudioExclusive() {
+    var audios = document.querySelectorAll('audio.music-preview');
+    audios.forEach(function(audio) {
+      audio.addEventListener('play', function() {
+        audios.forEach(function(other) {
+          if (other !== audio) { other.pause(); other.currentTime = 0; }
+        });
+      });
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAudioExclusive);
+  } else {
+    initAudioExclusive();
+  }
+})();
+</script>
 </body>
 </html>

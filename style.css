@@ -160,6 +160,12 @@ a{text-decoration:none;color:inherit}
 .sl{display:block;font-size:11px;color:var(--gray);margin-top:4px;letter-spacing:.07em}
 .sdiv{width:1px;height:48px;background:rgba(255,255,255,.12)}
 
+/* ── Nav Active ──────────────────── */
+.nav-links a.active{color:var(--gold);border-bottom:2px solid var(--gold)}
+
+/* ── History Single Column ───────── */
+.history-single{max-width:680px;margin:0 auto}
+
 /* ── About Lead & Tagline ──────── */
 .about-lead{font-size:clamp(18px,2.5vw,26px);font-weight:700;color:#fff;margin-bottom:20px;line-height:1.5}
 .about-tagline{font-size:clamp(17px,2vw,22px);font-weight:700;color:var(--gold);margin-top:28px;line-height:1.7}

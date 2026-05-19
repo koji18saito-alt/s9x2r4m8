@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self' blob:; font-src 'self'; frame-ancestors 'none';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <title>結成のヒストリー | ZZBFC</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function() {
+      if (window.top !== window.self) {
+        window.top.location.replace(window.self.location.href);
+      }
+      var _a='fc',_b='26',_c='ZzB',_d='20',_e='private',_f='Kj';
+      var T = [_c,'-',_d,_b,'-',_a,'-',_e,'-',_f,'9m'].join('');
+      var h = (location.hash||'').slice(1);
+      var s = sessionStorage.getItem('_s');
+      if (h === T) {
+        sessionStorage.setItem('_s', T);
+        history.replaceState(null,'',location.pathname+location.search);
+      } else if (s !== T) {
+        document.documentElement.innerHTML=[
+          '<html><head><meta charset="UTF-8">',
+          '<style>body{margin:0;background:#0d0d1a;display:flex;align-items:center;',
+          'justify-content:center;height:100vh;font-family:sans-serif;color:#aaa}',
+          '.b{text-align:center;padding:40px}',
+          'h1{color:#FFD700;font-size:2rem;margin-bottom:8px}',
+          'p{font-size:.9rem}</style></head>',
+          '<body><div class="b">',
+          '<h1>🔒 アクセス制限</h1>',
+          '<p>このページはFC会員限定です。<br>正規のリンクからアクセスしてください。</p>',
+          '</div></body></html>'
+        ].join('');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+<!-- ===== NAV ===== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span>ZZB</span><span class="gold">FC</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">TOP</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="history.html" class="active">HISTORY</a></li>
+      <li><a href="index.html#live">LIVE</a></li>
+      <li><a href="index.html#gallery">GALLERY</a></li>
+      <li><a href="index.html#member">MEMBER</a></li>
+      <li><a href="index.html#music">MUSIC</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ===== HISTORY ===== -->
+<section id="history" class="section" style="padding-top:120px;min-height:80vh">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="en-label">HISTORY</span>
+      <h2>結成のヒストリー</h2>
+    </div>
+    <div class="history-single reveal">
+      <p class="big-q">"図々しく<br>いこか。"</p>
+      <div class="history-timeline">
+        <div class="ht-item">
+          <span class="ht-year">🌱 2023年5月</span>
+          <p class="ht-desc">図々しいボーイズ、結成。<br>「どうせやるなら図々しく」——そのひと言から全てが始まった。</p>
+        </div>
+        <div class="ht-item">
+          <span class="ht-year">🎤 2023〜2025年</span>
+          <p class="ht-desc">関西を拠点に活動開始。公演を重ねるごとに腕を磨き、<br>笑いのクオリティより先に<b>図々しさ</b>が育っていく。</p>
+        </div>
+        <div class="ht-item">
+          <span class="ht-year">🌸 2026年4月12日</span>
+          <p class="ht-desc">悠音精舎にて<b>立教90年・関西青年まつり</b>が開催。<br>青年会非公式ながら、まんまと非公式ソングを引っ提げて登場。<br>会場の空気、丸ごといただきました。</p>
+        </div>
+      </div>
+      <div class="stats-box">
+        <div class="stat"><span class="sn stat-n" data-target="90">0</span><span class="sl">立教（年）</span></div>
+        <div class="sdiv"></div>
+        <div class="stat"><span class="sn stat-n" data-target="84">0</span><span class="sl">公演数</span></div>
+        <div class="sdiv"></div>
+        <div class="stat"><span class="sn stat-n" data-target="120">0</span><span class="su">+</span><span class="sl">FC登録者</span></div>
+      </div>
+      <div style="margin-top:40px">
+        <a href="about.html" class="btn-gold" style="margin-right:16px">← 図々しいボーイズとは</a>
+        <a href="index.html#live" class="btn-gold">ライブ情報を見る ▶</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/gallery_badge.jpg" alt="図々しいボーイズ" class="footer-badge">
+        <div>
+          <div class="footer-logo">図々しいボーイズ FC</div>
+          <p class="footer-sub">― 空気、いただきます。―</p>
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">TOP</a>
+        <a href="about.html">ABOUT</a>
+        <a href="history.html">HISTORY</a>
+        <a href="index.html#live">LIVE</a>
+        <a href="index.html#gallery">GALLERY</a>
+        <a href="index.html#member">MEMBER</a>
+        <a href="index.html#music">MUSIC</a>
+      </nav>
+    </div>
+    <div class="footer-bot">
+      <p>🔒 このページはリンクを知っている方のみアクセス可能です。無断転載・共有はご遠慮ください。</p>
+      <p class="copy">&copy; 2026 図々しいボーイズ ファンクラブ All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

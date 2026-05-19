@@ -201,6 +201,11 @@ a{text-decoration:none;color:inherit}
 .bi-link{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:#e0d8ff;text-decoration:none;transition:color .2s,transform .2s;cursor:pointer}
 .bi-link span{font-size:18px}
 .bi-link:hover{color:var(--gold);transform:translateY(-1px)}
+.bi-main-link{display:inline-flex;align-items:center;gap:12px;font-size:18px;font-weight:700;color:#fff;text-decoration:none;padding:10px 36px;border:2px solid rgba(255,215,0,.5);border-radius:50px;transition:background .25s,border-color .25s,color .25s,transform .25s,box-shadow .25s;letter-spacing:.05em}
+.bi-main-link:hover{background:rgba(255,215,0,.12);border-color:var(--gold);color:var(--gold);transform:translateY(-2px);box-shadow:0 6px 24px rgba(255,215,0,.18)}
+.bi-main-icon{font-size:22px}
+.bi-main-text{}
+.bi-main-arrow{font-size:14px;opacity:.7}
 .bsep{color:rgba(255,255,255,.2);font-size:18px}
 
 /* ── Live ─────────────────────── */
